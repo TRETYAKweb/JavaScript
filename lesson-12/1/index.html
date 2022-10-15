@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW1</title>
+  <style>
+    form,
+    form * {
+      display: block;
+    }
+
+    input {
+      width: 220px;
+      height: 30px;
+      border: 1px solid #ececec;
+      padding: 5px;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+    }
+
+    .error {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" method="" id="form">
+    <h2>Добавить данные</h2>
+    <input type="text" name="browser" placeholder="Браузер">
+    <input type="text" name="company" placeholder="Компания">
+    <input type="text" name="percent" placeholder="Процент рынка">
+    <input type="submit" value="Добавить данные">
+  </form>
+
+  <div class="results">
+    <h2>Анализ данных</h2>
+    <button>Проанализировать данные</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="./1.js"></script>
+
+</body>
+
+</html>
