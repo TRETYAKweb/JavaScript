@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Task 1</title>
+</head>
+
+<body>
+  <div style="width: 50%; margin: 10% auto;">
+    <form id="cleanerRobotLaunchForm">
+      <div class="form-group">
+        <label for="energyInput">Энергия</label>
+        <input class="form-control" id="energyInput" type="number" name="energy" value=50 aria-describedby="energyHelp"
+          placeholder="Enter energy">
+      </div>
+      <div class="form-group">
+        <label for="squareInput">Площадь уборки</label>
+        <input class="form-control" id="squareInput" type="number" name="square" value=45 aria-describedby="squareHelp"
+          placeholder="Enter square">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Начать уборку" />
+    </form>
+    <p style="margin-top: 50px;" id="text">Спустя 4.5 секунды: Уборка завершена. Осталось заряда батареи: 45.5.</p>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
