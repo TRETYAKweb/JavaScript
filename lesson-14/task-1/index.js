@@ -23,17 +23,15 @@
 Function.prototype.delay = function (ms) {
   const _this = this;
 
-  if (this === sayHello) {
-    setTimeout(this, ms);
-  } else {
-    return function (a, b) {
-      if (arguments.length > 1) {
-        setTimeout(function () {
-          _this(a, b);
-        }, ms);
-      }
+  if (_this.length !== 0) {
+    return function (...rest) {
+      setTimeout(function () {
+        _this(...rest);
+      }, ms);
     };
   }
+
+  setTimeout(_this, ms);
 };
 
 function sayHello() {
